@@ -50,8 +50,9 @@ dir_path = os.path.dirname(os.getcwd()) + "/" + difficulty + "/" + title
 file_path = dir_path + "/" + file_name
 
 html_content = f'''
-<h2>Difficulty - {difficulty}</h2>
-<h2><a href="{link}" target="_blank">{question_id}.{question_title}</a></a></h2>
+<h2></h2>
+<h2><a href="{link}" target="_blank">{question_id}.{question_title}</a></h2><br/>
+<h3>Difficulty - {difficulty}</h3>
 '''
 
 file_content = "".join([html_content,"\n",resp_text])

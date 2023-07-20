@@ -1,6 +1,7 @@
 
-<h2>Difficulty - Medium</h2>
-<h2><a href="https://leetcode.com/problems/redundant-connection/" target="_blank">684.Redundant Connection</a></a></h2>
+<h2></h2>
+<h2><a href="https://leetcode.com/problems/redundant-connection/" target="_blank">684.Redundant Connection</a></h2><br/>
+<h3>Difficulty - Medium</h3>
 
 <p>In this problem, a tree is an <strong>undirected graph</strong> that is connected and has no cycles.</p>
 
