@@ -3,7 +3,7 @@ import json
 import os
 
 BASE_URL = "https://leetcode.com/problems"
-QUESTION_NAME = "redundant-connection"
+QUESTION_NAME = "robot-return-to-origin"
 # Define the GraphQL query with variables
 query = '''
   query questionContent($titleSlug: String!){
@@ -47,6 +47,7 @@ resp_text = (content.replace("\\n"," ")
 #Create new Directory
 title = question_title.replace(" ", "")
 dir_path = os.path.dirname(os.getcwd()) + "/" + difficulty + "/" + title
+os.mkdir(dir_path)
 read_me_path = dir_path + "/" + read_me
 
 html_content = f'''
