@@ -21,9 +21,3 @@ class Solution:
         self.findPathSum(root.left, currentSum, newPath ,targetSum,allPaths)
         self.findPathSum(root.right, currentSum, newPath,targetSum,allPaths)
         return allPaths
-
-
-
-
-
-

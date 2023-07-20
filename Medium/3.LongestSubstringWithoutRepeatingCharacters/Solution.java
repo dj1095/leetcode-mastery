@@ -1,9 +1,4 @@
-package LongestSubstrWithoutRepeatingChars;
-
-import java.util.HashSet;
-import java.util.Set;
-
-class LengthOfLongestSubstring {
+class Solution {
     public int lengthOfLongestSubstring(String s) {
         Set<Character> hashSet = new HashSet<Character>();
         int maxSubStr = 0;

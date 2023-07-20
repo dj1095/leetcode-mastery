@@ -1,4 +1,3 @@
-package Hard.TrappingRainWater;
 
 class Solution {
     public int trap(int[] height) {

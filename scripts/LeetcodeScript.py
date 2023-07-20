@@ -46,7 +46,7 @@ resp_text = (content.replace("\\n"," ")
 
 #Create new Directory
 title = question_title.replace(" ", "")
-dir_path = os.path.dirname(os.getcwd()) + "/" + difficulty + "/" + title
+dir_path = os.path.dirname(os.getcwd()) + "/" + difficulty + "/" + question_id+"."+title
 if not os.path.isdir(dir_path):
   os.mkdir(dir_path)
 
