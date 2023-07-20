@@ -70,7 +70,7 @@ solution_file = ""
 if ext in mapper:
   solution_file = "Solution" + mapper[ext]
 else:
-  solution_file = "Solution" + ext
+  solution_file = "Solution" + ext['python']
 sol_path = dir_path + "/" + solution_file
 f2 = open(sol_path,'w')
 
