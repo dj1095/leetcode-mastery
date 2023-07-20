@@ -34,7 +34,7 @@ data = json.loads(response.text)
 
 
 #File Handling
-file_name = "README.md"
+read_me = "README.md"
 link = BASE_URL + "/" + QUESTION_NAME + "/"                                   
 question_id = data["data"]["question"]["questionId"]
 question_title = data["data"]["question"]["questionTitle"]
@@ -47,7 +47,7 @@ resp_text = (content.replace("\\n"," ")
 #Create new Directory
 title = question_title.replace(" ", "")
 dir_path = os.path.dirname(os.getcwd()) + "/" + difficulty + "/" + title
-file_path = dir_path + "/" + file_name
+read_me_path = dir_path + "/" + read_me
 
 html_content = f'''
 <h2></h2>
@@ -56,6 +56,12 @@ html_content = f'''
 '''
 
 file_content = "".join([html_content,"\n",resp_text])
-f = open(file_path,'w')
+#Creating ReadMe file
+f = open(read_me_path,'w')
 f.write(file_content)
+#Creating Solution File
+solution = "Solution.py"
+sol_path = dir_path + "/" + solution
+f2 = open(sol_path,'w')
+
 
