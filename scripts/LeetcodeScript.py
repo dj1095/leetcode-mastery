@@ -16,7 +16,7 @@ mapper = {
 query = '''
   query questionContent($titleSlug: String!){
     question(titleSlug: $titleSlug){
-    questionId
+    questionFrontendId
     questionTitle
     difficulty
     content
@@ -36,7 +36,7 @@ response = requests.post(API_ENDPOINT, json={'query': query, 'variables': variab
 
 # Parse the response
 data = json.loads(response.text)                                 
-question_id = data["data"]["question"]["questionId"]
+question_id = data["data"]["question"]["questionFrontendId"]
 question_title = data["data"]["question"]["questionTitle"]
 difficulty = data["data"]["question"]["difficulty"]
 content = data["data"]["question"]["content"]
