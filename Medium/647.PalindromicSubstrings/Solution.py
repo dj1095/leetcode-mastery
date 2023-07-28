@@ -4,11 +4,11 @@ class Solution:
         #Space Complexity O(1)
         palindromeSubstrCount = 0
         for i in range(len(s)):
-            palindromeSubstrCount += self.getlongestPal(i, i, s)
-            palindromeSubstrCount += self.getlongestPal(i, i+1, s)
+            palindromeSubstrCount += self.getPalCount(i, i, s)
+            palindromeSubstrCount += self.getPalCount(i, i+1, s)
         return palindromeSubstrCount
 
-    def getlongestPal(self, leftIdx, rightIdx, s) :
+    def getPalCount(self, leftIdx, rightIdx, s) :
         count = 0
         while leftIdx >=0 and rightIdx < len(s) and s[leftIdx] == s[rightIdx]:
             leftIdx -= 1
