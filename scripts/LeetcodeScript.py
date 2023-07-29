@@ -4,9 +4,12 @@ import os
 
 BASE_URL = "https://leetcode.com/problems"
 API_ENDPOINT = 'https://leetcode.com/graphql'
+
+
 question_name = input("Enter question name: ")
 ext = input("Enter language used : ").lower()
 
+#File extensions Supported 
 mapper = {
   "java":".java",
   "python":".py"
