@@ -1,5 +1,7 @@
 from heapq import *
 class MedianFinder:
+    # Time Complexity - O(Log N ) for insertions , if N insertions then N * LOG N
+    # Space Complexity - O(N) considering at any time we hold n elements in heaps
 
     def __init__(self):
         self.maxHeap = []
