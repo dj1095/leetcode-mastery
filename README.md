@@ -1,4 +1,5 @@
 # Leetcode-Mastery
+![](https://leetcard.jacoblin.cool/dj1095?theme=light,unicorn)
 
 Welcome to the "LeetCode Mastery" repository, the destination for mastering algorithmic problem-solving and understanding the intricacies of time and space complexities. 🚀
 
