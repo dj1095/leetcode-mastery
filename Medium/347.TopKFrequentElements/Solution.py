@@ -5,7 +5,7 @@ from heapq import *
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         # Time Complexity - O(N + N*logK)
-        # Space Complexity - O(N) since we have to store all K numbers in the frequency map given all are distinct numbers
+        # Space Complexity - O(N) since we have to store all N numbers in the frequency map given all are distinct numbers
         result = []
         # finding the frequencies of the nums
         freq_map = defaultdict(int)
