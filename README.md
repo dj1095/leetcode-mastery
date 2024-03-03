@@ -24,4 +24,4 @@ Happy Coding! 🚀📚 #LeetCodeMastery #AlgorithmAnalysis #CodingSolutions
 
 📌 Disclaimer: This repository is meant for educational purposes and as a resource for learning. Please ensure that you follow LeetCode's guidelines and policies when using the platform.
 
-Note: Some of the Problem Numbers are different(due to bad data (fixed later) ) but the problem remains the same. Please search with the question name 
+Note: Some of the Problem Numbers are different(due to bad data (fixed later) ) but the problem remains the same. Please search with the question name.
